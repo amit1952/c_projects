@@ -5,25 +5,24 @@
  */
 #include <stdio.h>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     // Declare the enum.
-    enum Company {GOOGLE, FACEBOOK, XEROX, YAHOO, EBAY, MICROSOFT};
+    enum Company { GOOGLE, FACEBOOK, XEROX, YAHOO, EBAY, MICROSOFT };
 
     // Create variables
-    enum Company company1, company2, company3;
+    enum Company xerox, google, ebay;
 
     // Assign values to the variables.
-    company1 = XEROX;
-    company2 = GOOGLE;
-    company3 = EBAY;
+    xerox = XEROX;
+    google = GOOGLE;
+    ebay = EBAY;
 
     // Print the variables
     printf("\nCOMPANY INDEXES\n");
     printf("===============\n");
-    printf("Company 1 is numbered: %d\n", company1);
-    printf("Company 2 is numbered: %d\n", company2);
-    printf("Company 3 is numbered: %d\n", company3);
+    printf("The value of xerox is: %d\n", xerox);
+    printf("The value of google is:%d\n", google);
+    printf("The value of ebay is %d\n", ebay);
 
     return 0;
 }
