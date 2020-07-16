@@ -3,13 +3,14 @@
  * supplied
  */
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
     // Declare and Initialize variables
     double height, width, area, perimeter;
-    height = 10.25;
-    width = 30.5;
+    height = atof(argv[1]);
+    width = atof(argv[2]);
     area = 0.0;
     perimeter = 0.0;
 
@@ -19,8 +20,9 @@ int main(int argc, char *argv[])
 
     // Print results
     printf("The height of the rectangle is %.2f\nThe width of the rectangle is %.2f\n", height, width);
-    printf("The perimeer of the rectangle is: %.2f\n", perimeter);
-    printf("The area of the rectangle is: %.2f\n", area);
+    printf("The perimeter of the rectangle is: %f\n", perimeter);
+    printf("The area of the rectangle is: %f\n", area);
+
     return 0;
 }
 
