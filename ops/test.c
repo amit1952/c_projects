@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 int main() {
-    int a = 33;
+    float a = 9.0;
     int b = 15;
-    int result = 0;
+    float result = 0.0;
 
-    result = a + b;
+    result = b / a;
     
-    printf("a = %d, b = %d\n", a, b);
-    printf("%d + %d = %d\n", a, b, result);
+    printf("b = %d, a = %f\n", b, a);
+    printf("%d / %f = %f\n", b, a, result);
 
     return 0;
 }
