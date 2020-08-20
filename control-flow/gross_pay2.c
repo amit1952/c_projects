@@ -1,6 +1,6 @@
 /*
  * Creator Amitava Das Gupta
- * Date:
+ * Date: 19/04/2020
  */
 #include <stdio.h>
 
@@ -11,7 +11,7 @@
 #define OVERTIME 40
 
 int main() {
-    // declare variavbles
+    // declare variables
     int hours = 0;
     double grossPay = 0.0;
     double taxes = 0.0;
@@ -29,6 +29,11 @@ int main() {
         double overtimePay = (hours - 40) * (PAYRATE * 1.5);
         grossPay += overtimePay;
     }
+    /* TEST */
+    printf("Hours = %d\n", hours);
+    printf("Pay Rate = %f\n", PAYRATE);
+    printf("Gross Pay = %.2f\n", grossPay);
+
     // Calculate the tax
     if (grossPay <= 300) {
         taxes = grossPay * TAXRATE_300;
