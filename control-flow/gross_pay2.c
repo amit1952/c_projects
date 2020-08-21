@@ -23,7 +23,7 @@ int main() {
 
     // Calculate the gross pay
     if (hours <= 40) {
-        grossPay = hours + PAYRATE;
+        grossPay = hours * PAYRATE;
     } else {
         grossPay = 40 * PAYRATE;
         double overtimePay = (hours - 40) * (PAYRATE * 1.5);
